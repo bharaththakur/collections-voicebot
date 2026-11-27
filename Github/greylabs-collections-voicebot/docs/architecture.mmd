@@ -1,0 +1,11 @@
+flowchart LR
+  UI[Browser voice UI] --> RTC[SmallWebRTC]
+  RTC --> PIPE[Pipecat orchestration]
+  PIPE --> STT[Deepgram Nova-3 STT]
+  STT --> LLM[OpenAI GPT-4.1]
+  LLM --> TTS[Cartesia Sonic 3.6]
+  TTS --> RTC
+  LLM --> POLICY[Deterministic policy checks]
+  POLICY --> VALIDATE[Structured outcome validation]
+  VALIDATE --> JSONL[Local CRM event log]
+  JSONL --> EMAIL[Internal SMTP notification]

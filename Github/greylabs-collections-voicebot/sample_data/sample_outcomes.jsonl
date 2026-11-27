@@ -1,0 +1,2 @@
+{"event_id": "sample-event-001", "call_id": "sample-call-001", "outcome_type": "Transfer-to-Human", "reason": "Customer disclosed a medical emergency.", "status": "sample_only", "note": "Illustrative schema example; not a live customer event."}
+{"event_id": "sample-event-002", "call_id": "sample-call-002", "outcome_type": "Callback-Request", "callback_time": "Tomorrow,", "status": "sample_known_defect", "note": "Sanitized reproduction of the observed truncation defect; incomplete preference must not be treated as a valid scheduled callback."}
